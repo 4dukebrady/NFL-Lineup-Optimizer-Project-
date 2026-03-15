@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 
 # Import the linear programs and cleaned data function
-from DFS_linear_program import optimize_projected_lineup, optimize_actual_lineup 
-from collect_clean import get_cleaned_data
+from linear_program import optimize_projected_lineup, optimize_actual_lineup 
+from data_collect_clean import get_cleaned_data
 
 # ==========================================
 # 1. PAGE SETUP & HELPER FUNCTIONS
