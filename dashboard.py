@@ -16,7 +16,6 @@ def load_and_cache_data():
     print("Executing data pipeline...")
     df = get_cleaned_data() 
     return df
-
 df_merged = load_and_cache_data()
 
 # Helper function to generate the headshot gallery cleanly
@@ -29,8 +28,7 @@ def display_headshots(team_df):
                 url = raw_url
             else:
                 player_name_url = player['Name'].replace(" ", "+")
-                url = f"https://ui-avatars.com/api/?name={player_name_url}&background=random&size=150"
-                
+                url = f"https://ui-avatars.com/api/?name={player_name_url}&background=random&size=150"  
             st.image(url, use_container_width=True)
             st.caption(f"**{player['Name']}** \n{player['position']} - {player['team']}")
 
